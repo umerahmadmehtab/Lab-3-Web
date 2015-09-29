@@ -46,6 +46,20 @@ a    {color: black}
  #image {
    
 }
+        #aero {
+    width: 220px;
+    height: 180px;
+    background:url(images/japan.png);
+    position: absolute;
+    top:5%;
+   
+}
+#aero:target{
+
+    position:aboslute!important;
+    top:25%!important;
+
+}
 </style>
     <body>
     
@@ -57,7 +71,11 @@ a    {color: black}
     <div id="image" style="top:30%; position: absolute;">
             <img src="png.png" height="100px" width="150px">  
     </div>
-        
+        <div id="aero" style="position: absolute; top: 2%;">
+            <button><a href="#aero">Down</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button><a href="#hello">UP</button>
+        </div>
                     
         </body>
 </head>
