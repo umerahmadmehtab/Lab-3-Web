@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        
+body 
+h1   {color:maroon}
+h2   {color:maroon}
+h3   {color:black}
+h4   {color:black}
+p    {color:blue}
+a    {color: black}
+        
+#tech-slideshow {
+    height: 1000px;
+    overflow: hidden;
+}
+       
+#tech-slideshow > div {
+    height: 10000px;
+    width: 10000px;
+    background: url(bg.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    
+    -moz-transition:  opacity 0.5s ease-out; 
+    -o-transition: opacity 0.5s ease-out; 
+    -webkit-transition: opacity 0.5s ease-out; 
+    -ms-transition: opacity 0.5s ease-out; 
+
+    -webkit-animation: moveSlideshow 60s linear infinite;
+    -moz-animation:    moveSlideshow 60s linear infinite;
+    
+}
+
+@-webkit-keyframes moveSlideshow {
+    0% { left: 0; }
+    100% { left: -5000px; }
+}
+@-moz-keyframes moveSlideshow {
+    0% { left: 0; }
+    100% { left: -5000px; }
+}
+ #image {
+   
+}
+</style>
+    <body>
+    
+        
+    <div id="tech-slideshow">
+        <div id="tech-slideshow-1"></div>
+    </div>
+        
+    <div id="image" style="top:30%; position: absolute;">
+            <img src="png.png" height="100px" width="150px">  
+    </div>
+        
+                    
+        </body>
+</head>
+</html>
